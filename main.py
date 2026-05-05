@@ -5,7 +5,6 @@ from PyQt6.QtCore import Qt, QRectF
 from PyQt6.QtGui import QPainter, QColor, QPen, QFont
 
 class TempGauge(QWidget):
-    """Vertical temperature gauge with a dynamic warning color."""
     def __init__(self, parent=None):
         super().__init__(parent)
         self.temp = 45 
@@ -80,7 +79,7 @@ class NavXDashboard(QMainWindow):
         super().__init__()
         
         # State Management
-        self.gear_status = "N"        
+        self.gear_status = "F"        
         self.selected_mode = "MOTOR"  
         self.is_engine_running = False
         self.current_speed = 0
